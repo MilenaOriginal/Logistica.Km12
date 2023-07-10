@@ -1,1 +1,2 @@
-# Logistica.Km12
+# Ruta-12-LOGISTICA
+Montenegro, Mitre, Villanueva, Mangialavore, Rojas
