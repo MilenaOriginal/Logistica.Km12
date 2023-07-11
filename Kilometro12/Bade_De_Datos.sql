@@ -32,15 +32,6 @@ create table mercaderia(
     foreign key(id_Camion) references camion(id)
 );
 
-create table producto(
-    id int auto_increment,
-    precio float(50),
-    nombre varchar(50),
-    marca varchar(50),
-    ubicacion varchar(255),
-    primary key(id)
-);
-
 
 Create table contrasenas(
     pwd varchar(50),
@@ -78,13 +69,9 @@ VALUES ('Ford', 'F150', 1),
        ('Chevrolet', 'Silverado', 2),
        ('Dodge', 'Ram', 3);
 
-INSERT INTO producto (precio, nombre, marca, ubicacion)
-VALUES (10.50, 'Papas fritas', 'Lay''s', 'Estante 1, fila 2'),
-       (2.99, 'Coca-Cola', 'Coca-Cola', 'Estante 3, fila 1'),
-       (3.25, 'Galletitas', 'Terrabusi', 'Estante 2, fila 3');
 
 INSERT INTO contrasenas (pwd, pwdDueno)
-VALUES ('12345', '54321');
+VALUES ('eg001', 'dl001');
 
 INSERT INTO estanteria (id, fila, columna)
 VALUES (1, 3, 5),
@@ -93,7 +80,7 @@ VALUES (1, 3, 5),
 
 
 INSERT INTO pallet (ListProd, fila, columna, fechaSa, fechaLl, estanteria)
-VALUES ('Producto 1, Producto 2', 1, 2, '2023-07-05', '2023-07-10', 1),
-       ('Producto 3, Producto 4', 2, 3, '2023-07-06', '2023-07-11', 2),
-       ('Producto 4, Producto 5', 3, 2, '2023-07-06', '2023-07-11', 3);
+VALUES ('Azucar', 1, 2, '2023-07-05', '2023-07-10', 1),
+       ('Yerba Mate', 2, 3, '2023-07-06', '2023-07-11', 2),
+       ('Papel Higienico', 3, 2, '2023-07-06', '2023-07-11', 3);
 
